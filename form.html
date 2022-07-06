@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body onload='document.form1.myText.focus()'>
+    <section><div class="class1">
+    <h1>Registration Form</h1>
+    <form name="form1" action="mailto:imittal_be21@thapar.edu"
+    method="POST" enctype="multipart/form-data">
+        <label for="name"> Name : </label>
+        <div class="class" id="id1">
+          <input type="text" name="myName" id="name">
+        </div><br>
+        <label for="Roll">Roll Number : </label>
+        <div class="class" id="id2">
+            <input type="number" name="myRoll_number" id="Roll">
+        </div><br>
+        <label for="email">Email Id : </label>
+        <div class="class" id="id3">
+            <input type="email" name="myEmail" id="email">
+            </div><br>
+            <label for="branch">Branch : </label>
+        <div class="class" id="id4">
+            <select name="myBranch" id="branch">
+                <option value="">Bio technology</option>
+                <option value="">Chemical engineering</option>
+                <option value="">Civil engineering</option>
+                <option value="">Computer engineering</option>
+                <option value="">Electrical engineering</option>
+                <option value="">Electronics engineering</option>
+                <option value="">Mechanical engineering</option>
+                <option value="">Mechatronics</option>
+            </select>
+        </div><br>
+        <label for="gender">Gender : </label>
+        <div class="class" id="id5">
+            Male <input type="radio" name="MyGender" id="gender"> Female <input type="radio" name="MyGender" id=""> Others <input type="radio" name="MyGender" id="">
+        </div><br>
+        <label for="interest">Are you a foodie ?</label>
+        <div class="class" id="id6">
+            <input type="checkbox" name="myInerest" id="interest">
+        </div><br>
+        <label for="describe">Describe yourself in a few words : </label>
+        <div class="class" id="id7">
+        <textarea name="myText" id="describe" cols="60" rows="5"></textarea>
+        </div><br>
+        <div class="class" id="id8">
+            <input type="submit" value="Submit Now" onclick="stringlength(document.form1.mytext,30,80)"/>
+            <input type="reset" value="Reset Now">
+        </div>
+        
+        </div>
+    </form></section>
+</body>
+</html>
